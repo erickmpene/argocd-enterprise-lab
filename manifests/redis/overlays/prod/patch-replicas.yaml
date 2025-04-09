@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-prod
+  name: redis
 spec:
   replicas: 3

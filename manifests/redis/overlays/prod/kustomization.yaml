@@ -2,7 +2,7 @@ resources:
   - ../../base
 
 patches:
-  - patch-replicas.yaml
-  - patch-service.yaml
+  - path: patch-replicas.yaml
+  - path: patch-service.yaml
 
 namespace: redis-prod

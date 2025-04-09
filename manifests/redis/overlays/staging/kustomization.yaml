@@ -1,8 +1,8 @@
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - patch-replicas.yaml
-  - patch-service.yaml
+patches:
+  - path: patch-replicas.yaml
+  - path: patch-service.yaml
 
 namespace: redis-staging

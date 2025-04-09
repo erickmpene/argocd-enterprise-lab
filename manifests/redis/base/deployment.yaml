@@ -13,7 +13,7 @@ spec:
         app: redis
     spec:
       containers:
-        - name: redis
-          image: redis:7
+        - name: nginx
+          image: erickmpene/nginx-all:v5
           ports:
-            - containerPort: 6379
+            - containerPort: 80
