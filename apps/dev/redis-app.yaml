@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-dev
+  namespace: argocd
+spec:
+  project: exercice-1
+  source:
+    repoURL: https://github.com/erickmpene/argocd-enterprise-lab.git
+    targetRevision: HEAD
+    path: manifests/redis/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: redis-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
