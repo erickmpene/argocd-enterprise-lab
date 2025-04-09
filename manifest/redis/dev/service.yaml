@@ -1,0 +1,9 @@
+kind: Service
+metadata:
+  name: redis-dev
+spec:
+  selector:
+    app: redis-dev
+  ports:
+    - port: 6379
+      targetPort: 6379

@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-staging
+  namespace: argocd
+spec:
+  project: exercice-1
+  source:
+    repoURL: https://github.com/erickmpene/argocd-enterprise-lab.git
+    targetRevision: HEAD
+    path: manifests/redis/staging
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: redis-staging
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
