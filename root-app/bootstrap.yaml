@@ -4,7 +4,7 @@ metadata:
   name: bootstrap
   namespace: argocd
 spec:
-  project: default
+  project: exercice-1
   source:
     repoURL: https://github.com/erickmpene/argocd-enterprise-lab.git
     targetRevision: HEAD
