@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/erickmpene/argocd-enterprise-lab.git
     targetRevision: HEAD
-    path: manifests/redis/prod
+    path: manifests/redis/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: redis-prod

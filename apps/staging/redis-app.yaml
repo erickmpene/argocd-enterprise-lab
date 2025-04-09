@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/erickmpene/argocd-enterprise-lab.git
     targetRevision: HEAD
-    path: manifests/redis/staging
+    path: manifests/redis/overlays/staging
   destination:
     server: https://kubernetes.default.svc
     namespace: redis-staging
